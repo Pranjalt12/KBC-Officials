@@ -1,0 +1,113 @@
+body {
+    background-color: #160c46;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+nav {
+    background-color: #27125b;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 3px solid gray;
+}
+
+nav h4 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 90vh;
+}
+
+.leftCont,
+.rightAbout {
+    width: 48%;
+}
+
+.rightCont img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.rightCont img:hover {
+    transform: scale(1.1);
+}
+
+.leftCont h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.leftCont h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.leftCont p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the start */
+}
+
+.rightAbout form {
+    max-width: 300px;
+}
+
+.rightAbout label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.rightAbout input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.rightAbout button {
+    background-color: #27125b;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.rightAbout button:hover {
+    background-color: #1a0b3d;
+}
+#p{
+    color: wheat;
+}
+@media (width<=744px) {
+    .cont{
+        flex-direction: column;
+    }
+}
